@@ -1,0 +1,69 @@
+body {
+    main {
+        .beneficios {
+            background: linear-gradient(to top, #E5E5E5 0%, #FFFFFF 10%);
+            padding-top: 36%;
+            text-align: center;
+            @include breakpoint(phone) {
+                padding-top: 70%;
+            }
+            p.text {
+                font-size: 65px;
+                line-height: 1;
+                text-align: left;
+                padding-left: 14%;
+                @include breakpoint(phone) {
+                    font-size: 35px;
+                }
+                @include breakpoint(tablet) {
+                    padding-left: 11%;
+                }
+                strong {
+                    font-family: 'Raleway', sans-serif;
+                }
+                strong.txt {
+                    color: #26B9F2;
+                    font-weight: normal;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+            .group {
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 156px;
+                @include breakpoint(phone) {
+                    margin-top: 100px;
+                }
+                @include breakpoint(tablet) {
+                    padding-right: 8%;
+                    padding-left: 5%;
+                }
+                @include breakpoint(desktop) {
+                    padding-right: 22%;
+                    padding-left: 13%;
+                }
+                p {
+                    font-size: 29px;
+                    margin-top: 28px;
+                    line-height: 1;
+                    @include breakpoint(phone) {
+                        margin-bottom: 70px;
+                    }
+                }
+            }
+            .img {
+                text-align: right;
+                margin-top: -769px;
+                @include breakpoint(phone) {
+                    text-align: center;
+                    margin-top: 0px;
+                }
+                img {
+                    @include breakpoint(phone) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

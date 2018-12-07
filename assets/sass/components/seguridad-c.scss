@@ -1,0 +1,140 @@
+body {
+    main {
+        .seguridad-c {
+            background: linear-gradient(to right, #FFFFFF 0%, #E5E5E5 100%);
+            padding-top: 10%;
+            padding-bottom: 10%;
+            color: #545454;
+            @include breakpoint(phone) {
+                padding-top: 30%;
+            }
+            .title {
+                text-align: center;
+                h2 {
+                    font-size: 65px;
+                    @include breakpoint(phone) {
+                        font-size: 44px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+                p.text {
+                    font-size: 45px;
+                    color: #40B7F4;
+                    @include breakpoint(phone) {
+                        font-size: 34px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+            }
+            .group-1,
+            .group-2 {
+                margin-left: 0;
+                margin-right: 0;
+                @include breakpoint(phone) {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+                .img {
+                    text-align: right;
+                    @include breakpoint(phone) {
+                        text-align: center;
+                    }
+                }
+                .description {
+                    p:nth-child(2) {
+                        color: #40B7F4;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-top: 27px;
+                    }
+                }
+                .list {
+                    margin-top: 22px;
+                    padding-left: 4%;
+                    ul {
+                        li {
+                            margin-bottom: 6px;
+                            i {
+                                background-color: #40B7F4;
+                                border-radius: 43px;
+                                width: 23px;
+                                color: #FFFFFF
+                            }
+                        }
+                    }
+                }
+            }
+            .group-1 {
+                margin-top: 90px;
+                .description {
+                    p:nth-child(1) {
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 35px;
+                            margin-top: 30px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 23px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 45px;
+                        }
+                        strong {
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                }
+            }
+            .group-2 {
+                margin-top: 65px;
+                .description {
+                    p:nth-child(1) {
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 20px;
+                            margin-top: 30px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 17px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 25px;
+                        }
+                        strong {
+                            font-family: 'Raleway', sans-serif;
+                            @include breakpoint(phone) {
+                                font-size: 32px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 23px;
+                            }
+                            @include breakpoint(desktop) {
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        hr {
+            width: 28%;
+            text-align: center;
+            margin-top: 40px;
+            @include breakpoint(phone) {
+                width: 72%;
+            }
+        }
+        .img-reloj {
+            text-align: right;
+            img {
+                @include breakpoint(phone) {
+                    width: 38%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+body {
+    main {
+        .mantemimiento {
+            background: linear-gradient(to top, #E4E4E4 0%, #FFFFFF 100%);
+            padding-top: 8%;
+            padding-bottom: 8%;
+            @include breakpoint(phone) {
+                padding-top: 29%;
+                padding-bottom: 29%;
+            }
+            .img-description {
+                margin-left: 0;
+                margin-right: 0;
+                .img-1 {
+                    padding-left: 0;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .description {
+                    @include breakpoint(phone) {
+                        padding-left: 13%;
+                    }
+                    h2 {
+                        font-size: 25px;
+                        @include breakpoint(phone) {
+                            font-size: 21px;
+                            margin-top: 39px;
+                        }
+                        strong {
+                            font-size: 41px;
+                            font-family: 'Raleway', sans-serif;
+                            @include breakpoint(phone) {
+                                font-size: 32px;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 26px;
+                        line-height: 1;
+                        margin-top: 40px;
+                        @include breakpoint(phone) {
+                            font-size: 28px;
+                        }
+                    }
+                }
+                .img-2 {
+                    @include breakpoint(phone) {
+                        text-align: center;
+                    }
+                    @include breakpoint(desktop) {
+                        margin-left: -13%;
+                    }
+                    img {
+                        margin-top: 22px;
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

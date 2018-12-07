@@ -1,0 +1,94 @@
+body {
+    main {
+        .popups {
+            .modal-dialog {
+                max-width: 1200px;
+                .modal-content {
+                    background-color: transparent;
+                    border: none;
+                    .close {
+                        position: absolute;
+                        left: 90%;
+                        background-color: #FFFFFF;
+                        height: 24px;
+                        width: 26px;
+                        border-radius: 14px;
+                        z-index: 2;
+                    }
+                    .group {
+                        .img {
+                            img {
+                                width: 85%;
+                                border-radius: 50px;
+                                @include breakpoint(phone) {
+                                    width: 100%;
+                                }
+                                @include breakpoint(tablet) {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .form {
+                            background-color: #40B7F4;
+                            text-align: center;
+                            border-radius: 50px;
+                            margin-left: -9%;
+                            @include breakpoint(phone) {
+                                margin-top: 18px;
+                                width: 95%;
+                                margin-left: 3%;
+                            }
+                            p {
+                                font-size: 35px;
+                                font-family: 'Raleway', sans-serif;
+                                color: #FFFFFF;
+                                margin-top: 52px;
+                                @include breakpoint(tablet) {
+                                    font-size: 26px;
+                                }
+                            }
+                            form {
+                                padding-left: 11%;
+                                padding-right: 11%;
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    height: 46px;
+                                    margin-bottom: 17px;
+                                    border-radius: 40px;
+                                    padding-left: 6%;
+                                    border: solid 1px #FFFFFF;
+                                    background-color: transparent;
+                                }
+                                 ::placeholder {
+                                    color: #FFFFFF;
+                                }
+                                .bton {
+                                    width: 100%;
+                                    background-color: #CC1111;
+                                    font-size: 28px;
+                                    font-family: 'Raleway', sans-serif;
+                                    color: #FFFFFF;
+                                    border-radius: 43px;
+                                    transition: 1s;
+                                    @include breakpoint(phone) {
+                                        margin-bottom: 50px;
+                                    }
+                                    @include breakpoint(tablet) {
+                                        font-size: 20px;
+                                        margin-bottom: 50px;
+                                    }
+                                }
+                                .bton:hover {
+                                    background-color: #FFFFFF;
+                                    color: #CC1111;
+                                    border: solid 1px #CC1111;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

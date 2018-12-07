@@ -1,0 +1,51 @@
+body {
+    main {
+        .whatsapp {
+            background: linear-gradient(to right, #FFFFFF 0%, #E4E4E4 100%);
+            padding-top: 15%;
+            padding-bottom: 22%;
+            @include breakpoint(phone) {
+                padding-left: 13%;
+                padding-right: 13%;
+            }
+            @include breakpoint(tablet) {
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-bottom: 29%;
+            }
+            @include breakpoint(desktop) {
+                padding-left: 33%;
+                padding-right: 33%;
+            }
+            img:nth-child(1) {
+                float: left;
+                margin-right: 3%;
+                @include breakpoint(phone) {
+                    float: none;
+                }
+            }
+            p {
+                color: #828282;
+                font-size: 29px;
+                line-height: 1;
+                @include breakpoint(phone) {
+                    font-size: 24px;
+                    margin-top: 20px;
+                }
+                strong {
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+            .img-whats {
+                cursor: pointer;
+                transition: 1s;
+                @include breakpoint(phone) {
+                    width: 100%;
+                }
+            }
+            .img-whats:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

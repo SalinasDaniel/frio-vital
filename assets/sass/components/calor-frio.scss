@@ -1,0 +1,159 @@
+body {
+    main {
+        .calor-frio {
+            background-image: url('../../assets/images/frio-calor.png');
+            background-size: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100%;
+            margin-top: -304px;
+            @include breakpoint(phone) {
+                margin-top: -96px;
+            }
+            @include breakpoint(tablet) {
+                margin-top: -225px;
+            }
+            .c-f {
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 18%;
+                padding-bottom: 8%;
+                @include breakpoint(phone) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                @include breakpoint(tablet) {
+                    padding-left: 7%;
+                    padding-right: 7%;
+                }
+                @include breakpoint(desktop) {
+                    padding-left: 13%;
+                    padding-right: 13%;
+                }
+                .img-c,
+                .img-f {
+                    width: 50%;
+                }
+                .img-c {
+                    p {
+                        color: #CC1111;
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 13px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 21px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 26px;
+                        }
+                        strong.text {
+                            font-family: 'Raleway', sans-serif;
+                            letter-spacing: 6px;
+                            @include breakpoint(phone) {
+                                font-size: 27px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 57px;
+                            }
+                            @include breakpoint(desktop) {
+                                font-size: 83px;
+                            }
+                        }
+                    }
+                }
+                .img-f {
+                    p {
+                        color: #FFFFFF;
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 16px;
+                            margin-top: -10px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 21px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 26px;
+                        }
+                        strong.text {
+                            font-family: 'Raleway', sans-serif;
+                            letter-spacing: 6px;
+                            @include breakpoint(phone) {
+                                font-size: 27px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 57px;
+                            }
+                            @include breakpoint(desktop) {
+                                font-size: 83px;
+                            }
+                        }
+                    }
+                }
+            }
+            .experiencia {
+                text-align: right;
+                margin-top: -42px;
+                margin-bottom: 50px;
+                @include breakpoint(phone) {
+                    padding-right: 3%;
+                }
+                @include breakpoint(tablet) {
+                    padding-right: 9%;
+                }
+                @include breakpoint(desktop) {
+                    padding-right: 35%;
+                }
+                p {
+                    font-size: 24px;
+                    color: #848484;
+                    @include breakpoint(phone) {
+                        font-size: 15px;
+                        margin-top: 20px;
+                    }
+                    @include breakpoint(desktop) {
+                        display: inline-table;
+                    }
+                    strong {
+                        color: #40B7F4;
+                        font-size: 30px;
+                        @include breakpoint(phone) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+                button {
+                    margin-left: 4%;
+                    background-color: #CC1111;
+                    font-size: 35px;
+                    color: #FFFFFF;
+                    border: solid 1px #FFFFFF;
+                    border-radius: 47px;
+                    box-shadow: 25px 22px 55px -18px rgba(0, 0, 0, 0.75);
+                    cursor: pointer;
+                    transition: 1s;
+                    font-family: 'Raleway', sans-serif;
+                    @include breakpoint(phone) {
+                        width: 63%;
+                        font-size: 30px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 57%;
+                        height: 66px;
+                    }
+                    @include breakpoint(desktop) {
+                        position: absolute;
+                        width: 20%;
+                        height: 74px;
+                    }
+                }
+                button:hover {
+                    background-color: #FFFFFF;
+                    color: #CC1111;
+                    border: solid 1px #CC1111;
+                }
+            }
+        }
+    }
+}

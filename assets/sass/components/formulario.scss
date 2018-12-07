@@ -1,0 +1,80 @@
+body {
+    main {
+        .formulario {
+            background-image: url('../../assets/images/Fondo-Formulario.jpg');
+            background-size: cover;
+            padding-top: 15%;
+            padding-bottom: 15%;
+            padding-left: 12%;
+            @include breakpoint(phone) {
+                padding-left: 5%;
+                padding-top: 25%;
+                padding-bottom: 25%;
+            }
+            .form {
+                text-align: center;
+                background-color: #FFFFFF;
+                padding-top: 4%;
+                padding-bottom: 4%;
+                border-radius: 30px;
+                @include breakpoint(phone) {
+                    width: 95%;
+                    padding-top: 15%;
+                    padding-bottom: 15%;
+                }
+                @include breakpoint(tablet) {
+                    width: 56%;
+                }
+                @include breakpoint(desktop) {
+                    width: 30%;
+                }
+                p {
+                    color: #26B9F2;
+                    font-size: 40px;
+                    line-height: 1;
+                    @include breakpoint(phone) {
+                        font-size: 30px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+                form {
+                    padding-left: 13%;
+                    padding-right: 13%;
+                    margin-top: 36px;
+                    input {
+                        display: block;
+                        width: 100%;
+                        height: 43px;
+                        margin-bottom: 16px;
+                        border-radius: 38px;
+                        border: solid 2px #5FACFF;
+                        padding-left: 5%;
+                    }
+                     ::placeholder {
+                        color: #5FACFF;
+                    }
+                    .bton {
+                        width: 100%;
+                        background-color: #CC1111;
+                        color: #FFFFFF;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 34px;
+                        border-radius: 47px;
+                        cursor: pointer;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            font-size: 26px;
+                        }
+                    }
+                    .bton:hover {
+                        background-color: #FFFFFF;
+                        color: #CC1111;
+                        border: solid 2px #CC1111;
+                    }
+                }
+            }
+        }
+    }
+}

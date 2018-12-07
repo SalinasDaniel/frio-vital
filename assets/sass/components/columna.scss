@@ -1,0 +1,43 @@
+body {
+    main {
+        .columna {
+            background-image: url('../../assets/images/Fondo-Columna.png');
+            background-size: cover;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            @include breakpoint(phone) {
+                padding-top: 14%;
+                padding-bottom: 14%;
+            }
+            .description-image {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 10%;
+                @include breakpoint(phone) {
+                    padding-left: 0;
+                    text-align: center;
+                }
+                p {
+                    color: #FFFFFF;
+                    line-height: 1;
+                    @include breakpoint(phone) {
+                        font-size: 29px;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 35px;
+                    }
+                    @include breakpoint(desktop) {
+                        font-size: 53px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+                .img {
+                    text-align: center;
+                    padding-top: 3%;
+                }
+            }
+        }
+    }
+}

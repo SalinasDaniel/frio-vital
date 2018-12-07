@@ -1,0 +1,72 @@
+body {
+    main {
+        .beneficios-2 {
+            background: linear-gradient(to top, #E5E5E5 0%, #FFFFFF 10%);
+            .group {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+                padding-left: 24%;
+                padding-right: 8%;
+                margin-top: 270px;
+                @include breakpoint(phone) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-top: 100px;
+                }
+                @include breakpoint(tablet) {
+                    padding-right: 0;
+                }
+                p {
+                    font-size: 29px;
+                    line-height: 1;
+                    margin-top: 26px;
+                    @include breakpoint(phone) {
+                        margin-bottom: 60px;
+                    }
+                }
+                button {
+                    margin-left: 30%;
+                    margin-top: 46px;
+                    font-size: 31px;
+                    background-color: #40B7F4;
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 0px 34px 0px 34px;
+                    height: 57px;
+                    font-family: 'Raleway', sans-serif;
+                    box-shadow: 3px 6px 31px -6px rgba(0, 0, 0, 0.75);
+                    cursor: pointer;
+                    transition: 1s;
+                    @include breakpoint(phone) {
+                        margin-left: 15%;
+                        width: 72%;
+                        font-size: 26px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 50%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 41%;
+                    }
+                }
+                button:hover {
+                    background-color: #FFFFFF;
+                    color: #40B7F4;
+                    border: solid 1px #40B7F4;
+                }
+            }
+            .img {
+                margin-top: -589px;
+                @include breakpoint(phone) {
+                    margin-top: 0px;
+                }
+                img {
+                    @include breakpoint(phone) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

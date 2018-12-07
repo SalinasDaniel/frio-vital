@@ -1,0 +1,44 @@
+body {
+    footer {
+        background-color: #FFFFFF;
+        .row {
+            margin-right: 0;
+            .col-sm-8 {
+                color: #26B9F2;
+                ul {
+                    margin-top: 37px;
+                    @include breakpoint(desktop) {
+                        margin-left: 9%;
+                        margin-top: 40px;
+                    }
+                    li {
+                        list-style: none;
+                        font-size: 13px;
+                        margin-top: 5px;
+                        @include breakpoint(desktop) {
+                            font-size: 22px;
+                            margin-top: 0;
+                        }
+                        i {
+                            width: 8%;
+                            color: #6B6D71;
+                            @include breakpoint(desktop) {
+                                width: 5%;
+                                letter-spacing: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo {
+                text-align: center;
+                margin-top: 11px;
+                margin-bottom: 23px;
+                @include breakpoint(desktop) {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

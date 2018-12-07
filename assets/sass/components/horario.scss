@@ -1,0 +1,57 @@
+body {
+    main {
+        .horario {
+            background-color: #26B9F2;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            color: #FFFFFF;
+            @include breakpoint(phone) {
+                padding-top: 29%;
+                padding-bottom: 29%;
+            }
+            .txt {
+                margin-right: 0;
+                margin-left: 0;
+                padding-left: 10%;
+                padding-right: 10%;
+                .txt-1 {
+                    p {
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 37px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 45px
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 76px;
+                        }
+                        strong {
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                }
+                .txt-2 {
+                    text-align: right;
+                    @include breakpoint(phone) {
+                        text-align: left;
+                        margin-top: 27px;
+                    }
+                    p {
+                        font-size: 27px;
+                        line-height: 1;
+                        @include breakpoint(tablet) {
+                            font-size: 23px;
+                        }
+                    }
+                    p:nth-child(1) {
+                        font-size: 40px;
+                        @include breakpoint(tablet) {
+                            font-size: 33px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

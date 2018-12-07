@@ -1,0 +1,92 @@
+    body {
+        main {
+            .control-temp {
+                background: linear-gradient(to top, #FFFFFF 0%, #E5E5E5 50%);
+                text-align: center;
+                padding-top: 15%;
+                padding-bottom: 15%;
+                @include breakpoint(phone) {
+                    padding-top: 29%;
+                    padding-bottom: 29%;
+                }
+                h2 {
+                    font-size: 65px;
+                    line-height: 1;
+                    @include breakpoint(phone) {
+                        font-size: 33px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+                img {
+                    @include breakpoint(tablet) {
+                        width: 100%;
+                    }
+                }
+                p {
+                    font-size: 42px;
+                    color: #40B7F4;
+                    @include breakpoint(phone) {
+                        font-size: 32px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+                .group {
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 90px;
+                    padding-left: 7%;
+                    padding-right: 7%;
+                    @include breakpoint(tablet) {
+                        padding-left: 0%;
+                        padding-right: 0%;
+                    }
+                    p {
+                        font-size: 30px;
+                        letter-spacing: 2px;
+                        line-height: 1;
+                        color: #545454;
+                        margin-top: 17px;
+                        @include breakpoint(phone) {
+                            margin-bottom: 55px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                button {
+                    margin-top: 50px;
+                    font-size: 31px;
+                    background-color: #CC1111;
+                    border-radius: 40px;
+                    color: #FFFFFF;
+                    border: solid 1px #FFFFFF;
+                    cursor: pointer;
+                    transition: 1s;
+                    font-family: 'Raleway', sans-serif;
+                    @include breakpoint(phone) {
+                        margin-top: 0px;
+                        width: 88%;
+                        font-size: 22px;
+                        height: 78px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 59%;
+                        height: 70px;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 38%;
+                    }
+                }
+                button:hover {
+                    background-color: #FFFFFF;
+                    color: #CC1111;
+                    border: solid 1px #CC1111;
+                }
+            }
+        }
+    }

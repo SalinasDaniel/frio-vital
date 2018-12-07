@@ -1,0 +1,125 @@
+body {
+    header {
+        .slide {
+            background-image: url('../../assets/images/Fondo-Slide.jpg');
+            background-size: cover;
+            .cover-page {
+                text-align: center;
+                padding-top: 4%;
+                padding-bottom: 4%;
+                @include breakpoint(phone) {
+                    padding-left: 0;
+                    padding-top: 17%;
+                    padding-bottom: 17%;
+                }
+                @include breakpoint(tablet) {
+                    padding-left: 19%;
+                }
+                @include breakpoint(desktop) {
+                    padding-left: 42%;
+                }
+                p:nth-child(1) {
+                    @include breakpoint(phone) {
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    color: #FFFFFF;
+                    @include breakpoint(phone) {
+                        font-size: 23px;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 20px;
+                    }
+                    @include breakpoint(desktop) {
+                        font-size: 28px;
+                    }
+                    strong {
+                        font-family: 'Raleway', sans-serif;
+                        letter-spacing: 4px;
+                        @include breakpoint(phone) {
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+                h1 {
+                    color: #40B7F4;
+                    line-height: 1;
+                    font-family: 'Raleway', sans-serif;
+                    margin-right: 0.3%;
+                    word-spacing: -7px;
+                    letter-spacing: 5px;
+                    @include breakpoint(phone) {
+                        font-size: 60px;
+                        margin-top: -32px;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 68px;
+                        margin-top: -37px;
+                    }
+                    @include breakpoint(desktop) {
+                        font-size: 96px;
+                        margin-top: -57px;
+                    }
+                    strong {
+                        @include breakpoint(phone) {
+                            font-size: 37px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 43px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 61px;
+                        }
+                    }
+                }
+                form {
+                    text-align: -webkit-center;
+                    padding-left: 26%;
+                    padding-right: 26%;
+                    @include breakpoint(phone) {
+                        padding-left: 7%;
+                        padding-right: 7%;
+                    }
+                    input {
+                        display: block;
+                        width: 100%;
+                        border-radius: 34px;
+                        height: 48px;
+                        margin-bottom: 6px;
+                        padding-left: 4%;
+                        border: none;
+                    }
+                    .bton {
+                        width: 100%;
+                        margin-top: 25px;
+                        background-color: #CC1111;
+                        color: #FFFFFF;
+                        font-family: 'Raleway', sans-serif;
+                        border-radius: 65px;
+                        border: solid 2px #FFFFFF;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            font-size: 22px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 26px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 34px;
+                        }
+                    }
+                    .bton:hover {
+                        background-color: #FFFFFF;
+                        color: #CC1111;
+                        border: solid 2px #CC1111;
+                    }
+                     ::placeholder {
+                        color: #40B7F4;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}

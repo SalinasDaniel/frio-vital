@@ -3,27 +3,33 @@ body {
         .logo-contact {
             background-color: #40B7F4;
             padding-left: 10%;
-            padding-right: 10%;
+            position: absolute;
+            z-index: 1;
+            width: 50%;
             @include breakpoint(tablet) {
                 padding-right: 0;
             }
             @include breakpoint(phone) {
                 text-align: center;
+                width: 100%;
+                padding-left: 0%;
             }
             .row {
                 margin-right: 0;
                 .col-sm-6 {
                     .logo {
-                        margin-top: 20px;
+                        margin-top: 12px;
+                        margin-bottom: 10px;
                     }
                     .contact {
+                        padding-top: 11%;
                         @include breakpoint(phone) {
                             margin-bottom: 15px;
                         }
                         img {
                             float: left;
-                            margin-top: 20px;
                             color: #6B6D71;
+                            width: 16%;
                             @include breakpoint(phone) {
                                 float: none;
                                 margin-left: 0;
@@ -34,18 +40,21 @@ body {
                                 margin-right: 4%;
                             }
                             @include breakpoint(desktop) {
-                                margin-left: 40%;
                                 margin-right: 3%;
                             }
                         }
                         p {
-                            font-size: 40px;
+                            font-size: 23px;
+                            line-height: 1;
                             font-family: 'Roboto', sans-serif;
                             margin: 0;
                             font-weight: bold;
                             color: #FFFFFF;
                             @include breakpoint(phone) {
                                 font-size: 37px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 18px;
                             }
                         }
                     }

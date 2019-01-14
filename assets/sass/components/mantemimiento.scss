@@ -3,14 +3,11 @@ body {
         .mantemimiento {
             background: linear-gradient(to top, #E4E4E4 0%, #FFFFFF 100%);
             padding-top: 8%;
-            padding-bottom: 8%;
             @include breakpoint(phone) {
-                padding-top: 29%;
-                padding-bottom: 29%;
+                padding-top: 150%;
+                padding-bottom: 15%;
             }
             .img-description {
-                margin-left: 0;
-                margin-right: 0;
                 .img-1 {
                     padding-left: 0;
                     img {
@@ -23,8 +20,12 @@ body {
                     }
                 }
                 .description {
+                    padding-left: 5%;
                     @include breakpoint(phone) {
-                        padding-left: 13%;
+                        padding-left: 7%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 0%;
                     }
                     h2 {
                         font-size: 25px;
@@ -53,11 +54,9 @@ body {
                     @include breakpoint(phone) {
                         text-align: center;
                     }
-                    @include breakpoint(desktop) {
-                        margin-left: -13%;
-                    }
                     img {
                         margin-top: 22px;
+                        width: 60%;
                         @include breakpoint(tablet) {
                             width: 100%;
                         }

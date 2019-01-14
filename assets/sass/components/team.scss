@@ -1,0 +1,45 @@
+body {
+    main {
+        .team {
+            background-image: url('../../assets/images/Fondo-Equipo.jpg');
+            padding-top: 10%;
+            padding-bottom: 30%;
+            text-align: center;
+            color: #FFFFFF;
+            @include breakpoint(phone) {
+                padding-top: 25%;
+                padding-bottom: 40%;
+            }
+            h2 {
+                font-size: 53px;
+                @include breakpoint(phone) {
+                    font-size: 28px;
+                }
+                strong {
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+            .items {
+                padding-left: 10%;
+                padding-right: 10%;
+                margin-top: 100px;
+                .item {
+                    @include breakpoint(phone) {
+                        margin-bottom: 60px;
+                    }
+                    img {
+                        @include breakpoint(phone) {
+                            width: 50%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

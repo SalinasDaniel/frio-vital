@@ -1,0 +1,48 @@
+body {
+    main {
+        .slide2 {
+            background-color: #000000;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            .carousel-inner {
+                padding-left: 20%;
+                padding-right: 20%;
+                @include breakpoint(phone) {
+                    padding-left: 16%;
+                    padding-right: 16%
+                }
+                img {
+                    border-radius: 23px;
+                    @include breakpoint(phone) {
+                        width: 100%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 100%;
+                    }
+                }
+            }
+            .carousel-control-prev {
+                left: 100px;
+                @include breakpoint(phone) {
+                    left: 0px;
+                }
+                @include breakpoint(tablet) {
+                    left: 50px;
+                }
+            }
+            .carousel-control-next {
+                right: 120px;
+                @include breakpoint(phone) {
+                    right: 0px;
+                }
+                @include breakpoint(tablet) {
+                    right: 50px;
+                }
+            }
+        }
+    }
+}

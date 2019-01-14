@@ -2,24 +2,20 @@ body {
     main {
         .instalacion {
             background-color: #26B9F2;
-            padding-top: 8%;
-            padding-bottom: 8%;
-            margin-top: 118px;
-            @include breakpoint(phone) {
-                padding-top: 29%;
-            }
             .img-description {
                 margin-left: 0;
                 margin-right: 0;
-                padding-left: 13%;
+                padding-left: 7%;
                 @include breakpoint(tablet) {
                     padding-left: 0;
                 }
                 .description {
                     color: #FFFFFF;
-                    padding-left: 6%;
+                    padding-top: 8%;
+                    padding-bottom: 8%;
                     @include breakpoint(phone) {
                         padding-left: 0;
+                        padding-top: 29%;
                     }
                     @include breakpoint(tablet) {
                         padding-left: 12%;
@@ -39,25 +35,17 @@ body {
                         font-family: 'Raleway', sans-serif;
                     }
                 }
-                .img-2 {
-                    text-align: right;
-                    padding-right: 0;
-                    @include breakpoint(phone) {
-                        margin-top: 0px;
-                    }
-                    @include breakpoint(tablet) {
-                        margin-top: -177px;
-                    }
-                    @include breakpoint(desktop) {
-                        margin-top: -255px;
-                    }
+                .img-1 {
+                    padding-top: 8%;
                     img {
-                        @include breakpoint(phone) {
-                            width: 100%;
-                        }
-                        @include breakpoint(tablet) {
-                            width: 100%;
-                        }
+                        width: 80%;
+                    }
+                }
+                .img-2 {
+                    img {
+                        width: 225%;
+                        position: absolute;
+                        right: 0px;
                     }
                 }
             }

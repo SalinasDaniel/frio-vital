@@ -12,7 +12,8 @@ body header .logo-contact {
   padding-left: 10%;
   position: fixed;
   z-index: 1;
-  width: 50%; }
+  width: 50%;
+  transition: 1s; }
   @media (min-width: 668px) and (max-width: 1024px) {
     body header .logo-contact {
       padding-right: 0; } }
@@ -26,38 +27,40 @@ body header .logo-contact {
     body header .logo-contact .row .col-sm-6 .logo {
       margin-top: 12px;
       margin-bottom: 10px; }
-    @media (max-width: 667px) {
-      body header .logo-contact .row .col-sm-6 .contact {
-        margin-bottom: 15px; } }
-    body header .logo-contact .row .col-sm-6 .contact img {
-      float: left;
-      color: #6B6D71;
-      width: 16%; }
+    body header .logo-contact .row .col-sm-6 .contact {
+      padding-top: 8%; }
       @media (max-width: 667px) {
-        body header .logo-contact .row .col-sm-6 .contact img {
-          float: none;
-          margin-left: 0;
+        body header .logo-contact .row .col-sm-6 .contact {
           margin-bottom: 15px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body header .logo-contact .row .col-sm-6 .contact img {
-          margin-left: -10%;
-          margin-right: 4%; } }
-      @media (min-width: 1025px) {
-        body header .logo-contact .row .col-sm-6 .contact img {
-          margin-right: 3%; } }
-    body header .logo-contact .row .col-sm-6 .contact p {
-      font-size: 23px;
-      line-height: 1;
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      font-weight: bold;
-      color: #FFFFFF; }
-      @media (max-width: 667px) {
-        body header .logo-contact .row .col-sm-6 .contact p {
-          font-size: 37px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body header .logo-contact .row .col-sm-6 .contact p {
-          font-size: 18px; } }
+      body header .logo-contact .row .col-sm-6 .contact img {
+        width: 13%;
+        float: left;
+        color: #6B6D71; }
+        @media (max-width: 667px) {
+          body header .logo-contact .row .col-sm-6 .contact img {
+            float: none;
+            margin-left: 0;
+            margin-bottom: 15px; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body header .logo-contact .row .col-sm-6 .contact img {
+            margin-left: -10%;
+            margin-right: 4%; } }
+        @media (min-width: 1025px) {
+          body header .logo-contact .row .col-sm-6 .contact img {
+            margin-right: 3%; } }
+      body header .logo-contact .row .col-sm-6 .contact p {
+        font-size: 23px;
+        line-height: 1;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        font-weight: bold;
+        color: #FFFFFF; }
+        @media (max-width: 667px) {
+          body header .logo-contact .row .col-sm-6 .contact p {
+            font-size: 37px; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body header .logo-contact .row .col-sm-6 .contact p {
+            font-size: 18px; } }
 
 body footer {
   background-color: #FFFFFF; }

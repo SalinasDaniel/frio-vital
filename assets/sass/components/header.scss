@@ -3,7 +3,7 @@ body {
         .logo-contact {
             background-color: #40B7F4;
             padding-left: 10%;
-            position: absolute;
+            position: fixed;
             z-index: 1;
             width: 50%;
             @include breakpoint(tablet) {
@@ -22,7 +22,7 @@ body {
                         margin-bottom: 10px;
                     }
                     .contact {
-                        padding-top: 11%;
+                        // padding-top: 11%;
                         @include breakpoint(phone) {
                             margin-bottom: 15px;
                         }
